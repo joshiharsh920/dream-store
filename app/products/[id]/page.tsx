@@ -3,6 +3,7 @@ import { prisma } from "@/lib/prisma";
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
+import AddToCartButton from "@/components/AddToCartButton";
 
 export default async function ProductDetailPage({
     params
@@ -21,6 +22,7 @@ export default async function ProductDetailPage({
     if (!product) {
         notFound();
     }
+
 
     return (
         <main className="max-w-6xl mx-auto p-10">
@@ -55,9 +57,7 @@ export default async function ProductDetailPage({
                         </p>
                     </div>
 
-                    <button className="mt-10 w-full md:w-max px-12 py-4 bg-black text-white rounded-full font-bold hover:bg-gray-800 transition">
-                        Add to Cart
-                    </button>
+                    <AddToCartButton product={product} />
                 </div>
             </div>
         </main>
