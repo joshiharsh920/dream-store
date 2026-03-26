@@ -9,7 +9,6 @@ export default function AddToCartButton({ product }: { product: any }) {
         <button
             onClick={() => {
                 addItem(product);
-                alert("Added to cart!");
             }}
             className="mt-10 px-12 py-4 bg-black text-white rounded-full font-bold hover:bg-gray-800 transition"
         >
