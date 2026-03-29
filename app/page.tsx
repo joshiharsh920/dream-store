@@ -9,6 +9,7 @@ export default async function Home() {
     <main className="max-w-7xl mx-auto p-10">
       <h1 className="text-3xl font-bold mb-8">Our Collection</h1>
 
+
       {/* 2. Check if products exist */}
       {products.length === 0 ? (
         <p className="text-gray-500 text-center py-20">No products found in the database.</p>
