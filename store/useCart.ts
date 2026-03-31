@@ -29,6 +29,7 @@ export const useCart = create<CartState>()(
                         ),
                     };
                 }
+
                 return { items: [...state.items, { ...product, quantity: 1 }] };
             }),
             removeItem: (id) => set((state) => ({
