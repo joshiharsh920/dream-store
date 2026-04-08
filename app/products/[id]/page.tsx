@@ -56,6 +56,7 @@ export default async function ProductDetailPage({
                             {product.description}
                         </p>
                     </div>
+                    
                     <AddToCartButton product={product} />
                 </div>
             </div>
