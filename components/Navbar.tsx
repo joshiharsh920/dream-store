@@ -20,6 +20,7 @@ export default function Navbar() {
                             {totalItems}
                         </span>
                     )}</Link>
+
                 <Link href="/login" className="hover:opacity-70 transition">Login</Link>
             </div>
         </nav>
