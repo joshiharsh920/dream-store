@@ -31,7 +31,6 @@ export default function CartPage() {
     return (
         <main className="max-w-4xl mx-auto p-10">
             <h1 className="text-3xl font-bold mb-8">Shopping Cart</h1>
-
             <div className="space-y-6">
                 {items.map((item) => (
                     <div key={item.id} className="flex items-center justify-between border-b pb-6">
