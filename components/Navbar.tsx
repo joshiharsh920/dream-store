@@ -7,8 +7,8 @@ export default function Navbar() {
     const items = useCart((state) => state.items);
     const totalItems = items.reduce((acc, item) => acc + item.quantity, 0);
     return (
-        <nav className="flex justify-between items-center px-10 py-1 bg-green-200 shadow-sm sticky top-0 z-50">
-            <div className="font-bold text-xl ">
+        <nav className="flex justify-between items-center px-18 py-3 bg-green-200 shadow-sm sticky top-0 z-50">
+            <div className="font-bold text-red-500 ">
                 <Link href="/">DREAM STORE</Link>
             </div>
             <div className="flex gap-8 font-medium">
