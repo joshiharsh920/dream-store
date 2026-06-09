@@ -9,6 +9,9 @@ export async function getAllProducts() {
     } catch (error) {
         console.error("Database Error:", error);
         return [];
+
+
+        
     }
 }
 
